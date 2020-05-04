@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5拖放API_赖启祥</title>
+    <style>
+        #div1 {
+            width: 260px;
+            height: 240px;
+            border: 1px solid;
+            float: left;
+        }
+
+        #div2,
+        #div3,
+        #div4,
+        #div5 {
+            width: 100px;
+            height: 80px;
+            margin: 20px 10px;
+            background-image: url(image/folder.png);
+            float: left;
+        }
+
+        samp {
+            position: relative;
+            left: 30px;
+            top: 30px;
+        }
+
+        #hs {
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+            float: left;
+            background-image: url(image/recycle.jpg)
+        }
+    </style>
+
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("Text/plain", event.target.id);
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            var photo = document.getElementById(data);
+            photo.remove();
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>HTML5拖放API：回收站效果</h2>
+    <hr>
+    <div id="div1">
+        <div id="div2" draggable="true" ondragstart="drag(event)"><samp>文件1</samp></div>
+        <div id="div3" draggable="true" ondragstart="drag(event)"><samp>文件2</samp></div>
+        <div id="div4" draggable="true" ondragstart="drag(event)"><samp>文件3</samp></div>
+        <div id="div5" draggable="true" ondragstart="drag(event)"><samp>文件4</samp></div>
+    </div>
+    <div id="hs" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body>
+
+</html>

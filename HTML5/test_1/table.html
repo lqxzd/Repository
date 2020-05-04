@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>商务风格的表格样式设计</title>
+    <style>
+        #recruit{
+            width: 100%;
+            border-collapse: collapse;/*合并两个单元格之间的外边*/
+            text-align: left;
+        }
+        
+        #recruit td,#recruit th{
+            border: 1px solid orange;  /*设置表格线为橘黄色*/
+            padding: 7px;/*设置内边距为7px*/
+        }
+        
+        #recruit th{
+            background-color: orange;  /*设置背景色*/
+            color: #FFFFFF;/*设置字体颜色*/
+        }
+        
+        #recruit tr.orange{
+            background-color: yellow /*给每行设置背景颜色*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>商务风格的表格样式设计</h3>
+    <hr />
+    <table id="recruit" border="1">
+        <caption>招聘信息表</caption>
+        <tr>
+            <th>地点</th>
+            <th>招聘职位</th>
+            <th>公司</th>
+        </tr>
+
+        <tr>
+            <td>全国</td>
+            <td>产品培训生</td>
+            <td>腾讯</td>
+        </tr>
+
+        <tr class="orange">
+            <td>全国</td>
+            <td>前端开发工程师</td>
+            <td>阿里巴巴</td>
+        </tr>
+
+        <tr>
+            <td>上海</td>
+            <td>交互设计师</td>
+            <td>网易设计</td>
+        </tr>
+
+        <tr class="orange">
+            <td>北京</td>
+            <td>视觉设计师</td>
+            <td>360</td>
+        </tr>
+
+        <tr>
+            <td>深圳</td>
+            <td>数据分析师</td>
+            <td>IBM</td>
+        </tr>
+
+        <tr class="orange">
+            <td>杭州</td>
+            <td>数据研发工程师</td>
+            <td>微软</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

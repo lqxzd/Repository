@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+			font-family: "微软雅黑";
+			list-style:none; 
+		}
+		.nav{
+			width: 100%;
+			background: #55aaff;
+			overflow: hidden;
+			/*浮动造成的父级盒子塌陷*/
+			/*overflow: hidden;*/
+			/* 第一种在父级上设置overflow：hidden
+			解决浮动塌陷 */
+		}
+		.navbar{
+			width: 1008px;
+			height: auto;
+			margin: auto;
+
+		}
+
+		.navbtn{
+			width: 100px;
+			height: 60px;
+			background: #55aaff;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			float: left;
+		}
+
+		.navbtn:hover{
+			color: greenyellow;
+		}
+		.navbar ul{
+			width: 810px;
+			float: left;
+		}
+		.clear{
+			clear:both
+		}
+
+		/* 伪类：
+		1.link= 默认的链接效果，只针对文字有效
+		2.hover=鼠标移入的效果
+		3.active=鼠标点击下去的效果
+		4.visited=鼠标访问过后的效果 */
+
+		
+	</style>
+</head>
+<body>
+
+<div class="nav">
+  	<div class="navbar">
+	<ul>
+		<a href=""><li class="navbtn">头条</li></a>
+		<a href=""><li class="navbtn">娱乐</li></a>
+		<a href=""><li class="navbtn">热点</li></a>
+		<a href=""><li class="navbtn">体育</li></a>
+		<a href=""><li class="navbtn">财经</li></a>
+		<a href=""><li class="navbtn">科技</li></a>
+		<a href="https://github.com/lqxzd"><li class="navbtn">myGitHub</li></a>
+		<a href="http://lqxzd.site"><li class="navbtn">myBlog</li></a>
+		<div class="clear"></div>
+	</ul>
+	</div>
+</div>
+</body>
+</html>

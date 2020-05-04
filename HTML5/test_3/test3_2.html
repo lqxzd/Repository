@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5拖放API</title>
+
+    <style>
+        #div1 {
+            width: 250px;
+            height: 70px;
+            border: 1px dotted;
+        }
+        
+        p {
+            position: relative;
+            left: 50px;
+            top: 10px;
+        }
+        
+        #box1 {
+            background-image: url(image/photoframe.jpg);
+            width: 100px;
+            height: 94px;
+            margin: 20px 20px;
+            background-size: 100% 100%;
+            display: none
+        }
+        
+        #box2 {
+            position: relative;
+            left: 18%;
+            top: 20%;
+            width: 64%;
+            height: 62%
+        }
+        
+        img {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var naturalwidth = 0;
+            var naturalheight = 0;
+            var files = event.dataTransfer.files[0];
+            var fr = new FileReader();
+            fr.readAsDataURL(files);
+            fr.onload = function() {
+                var data = fr.result;
+                var img = document.createElement('img');
+                img.src = data;
+                img.onload = function() {
+                    naturalwidth = img.naturalWidth * 2;
+
+                    naturalheight = img.naturalHeight * 2;
+
+                    box2.innerHTML = "";
+                    var box1 = document.getElementById("box1");
+                    box1.style.display = "block";
+
+                    box1.style.width = naturalwidth + "px";
+                    box1.style.height = naturalheight + "px";
+                    box2.appendChild(img);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>HTML5拖放API:图片相框效果</h2>
+    <hr>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>请将图片拖放至此处</p>
+    </div>
+    <div id="box1">
+        <div id="box2"> </div>
+    </div>
+
+</body>
+
+</html>

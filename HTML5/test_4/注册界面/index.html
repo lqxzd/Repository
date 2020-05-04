@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>账户注册</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="register-box">
+            <div class="title-box">
+                <span>用户注册</span>
+            </div>
+            <form action="#" method="post" id="addUserForm" name="addUserForm">
+                <div class="username-box">
+                    <label for="username">用户名</label>
+                    <div class="username-input">
+                        <input type="text" id="username" name="username" placeholder="请输入用户名 长度:6-12个字符" />
+                    </div>
+                </div>
+
+                <div class="userPassword-box">
+                    <label for="userPassword">密码</label>
+                    <div class="userPassword-input">
+                        <input type="password" id="userPassword" name="userPassword" placeholder="请输入密码 长度:6-12个字符" />
+                    </div>
+                </div>
+
+                <div class="userRePassword-box">
+                    <label for="userRePassword">确认密码</label>
+                    <div class="userRePassword-input">
+                        <input type="password" id="userRePassword" name="userRePassword" placeholder="请重复输入密码" />
+                    </div>
+                </div>
+
+                <div class="userPhone-box">
+                    <label for="userPhone">姓名</label>
+                    <div class="userPhone-input">
+                        <input type="text" id="userPhone" name="nickname" placeholder="名字" />
+                    </div>
+                </div>
+
+                <div class="userEmail-box">
+                    <label for="userEmail">电子邮箱</label>
+                    <div class="userEmail-input">
+                        <input type="text" id="userEmail" name="userEmail" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+                    </div>
+                </div>
+
+                <div class="submit-box">
+                    <input onclick="checkForm()" id="submit-button" type="submit" value="注册">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/form.js"></script>
+</html>

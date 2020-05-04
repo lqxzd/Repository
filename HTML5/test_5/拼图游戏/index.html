@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas拼图游戏</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body onload="ready()">
+    <div idid="box">
+        <div id="title">
+            <h1>HTML画布综合项目之拼图游戏_v2.0</h1>
+            <h2>by------赖启祥</h2>
+        </div>
+        <hr>
+        <div id="timer">
+            <span>共计时间：</span>
+            <span id="minute">00</span>
+            <span>:</span>
+            <span id="second">00</span>
+        </div>
+        <div id="game">
+            <canvas id="puzzle" width="300" height="300" onclick="move(event)"></canvas>
+        </div>
+        <div id="btn">
+            <input type="button" name="" id="begin" value="重新开始" onclick="initGame(3)">
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷调查_赖启祥</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="myBox">
+        <div class="header">
+            <h1>手机移动支付业务问卷调查</h1>
+        </div>
+        <div class="content">
+            <hr>
+            <form action="#" method="post" id="myForm" name="myForm">
+                1.您的教育程度是？
+                <div class="space"></div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="radio" name="education" value="highSchool">
+                <span>&nbsp;&nbsp;高中&nbsp;&nbsp;</span>
+                <input type="radio" name="education" value="JuniorCollege">
+                <span>&nbsp;&nbsp;大专&nbsp;&nbsp;</span>
+                <input type="radio" name="education" value="undergraduate">
+                <span>&nbsp;&nbsp;本科&nbsp;&nbsp;</span>
+                <input type="radio" name="education" value="master">
+                <span>&nbsp;&nbsp;硕士研究生&nbsp;&nbsp;</span>
+                <input type="radio" name="education" value="doctor">
+                <span>&nbsp;&nbsp;博士及以上&nbsp;&nbsp;</span>
+                <div class="space"></div>
+                2.您的年龄段是？
+                <div class="space"></div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="radio" name="age" value="eighteen">
+                <span>&nbsp;&nbsp;18岁以下&nbsp;&nbsp;</span>
+                <input type="radio" name="age" value="twenty-five">
+                <span>&nbsp;&nbsp;18-25岁&nbsp;&nbsp;</span>
+                <input type="radio" name="age" value="thirty">
+                <span>&nbsp;&nbsp;25-30岁&nbsp;&nbsp;</span>
+                <input type="radio" name="age" value="thirty-five">
+                <span>&nbsp;&nbsp;30-35岁&nbsp;&nbsp;</span>
+                <input type="radio" name="age" value="Above">
+                <span>&nbsp;&nbsp;35岁以上&nbsp;&nbsp;</span>
+                <div class="space"></div>
+                3.您是否使用过手机移动支付业务？
+                <div class="space"></div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="radio" name="usageRate" value="none">
+                <span>&nbsp;&nbsp;从未听说过&nbsp;&nbsp;</span>
+                <input type="radio" name="usageRate" value="notUse">
+                <span>&nbsp;&nbsp;听说过，但未使用过&nbsp;&nbsp;</span>
+                <input type="radio" name="usageRate" value="Occasional">
+                <span>&nbsp;&nbsp;偶尔使用&nbsp;&nbsp;</span>
+                <input type="radio" name="usageRate" value="often">
+                <span>&nbsp;&nbsp;经常使用&nbsp;&nbsp;</span>
+                <div class="space"></div>
+                4.您了解以下哪些手机移动支付业务？
+                <div class="space"></div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="radio" name="useType" value="zfb">
+                <span>&nbsp;&nbsp;支付宝&nbsp;&nbsp;</span>
+                <input type="radio" name="useType" value="wx">
+                <span>&nbsp;&nbsp;微信支付&nbsp;&nbsp;</span>
+                <input type="radio" name="useType" value="dxy">
+                <span>&nbsp;&nbsp;电信翼支付&nbsp;&nbsp;</span>
+                <input type="radio" name="useType" value="AP">
+                <span>&nbsp;&nbsp;Apple Pay&nbsp;&nbsp;</span>
+                <input type="radio" name="useType" value="none">
+                <span>&nbsp;&nbsp;以上均不了解&nbsp;&nbsp;</span>
+                <div class="space"></div>
+                5.您看重以下哪些支付功能（可多选）
+                <div class="space"></div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;话费/游戏币充值&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;刷手机加油&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;刷手机购物&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;刷手机乘坐公交/轻轨/地铁&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;水电煤/有线电视/宽带远程缴费&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;享受联盟商户的优惠折扣&nbsp;&nbsp;</span><br>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input type="checkbox" name="myCheckBox">
+                <span>&nbsp;&nbsp;以上均不感兴趣&nbsp;&nbsp;</span><br>
+                <div class="space"></div>  
+            </form>
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="footer">
+            <form action="#" method="post" id="myForm_2" name="myForm_2">
+                您的姓名
+                <input type="text" id="myName" name="myName">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                您的职业
+                <input type="text">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                联系电话
+                <input type="text" id="myPhone" name="myPhone">
+            </form>
+            <input onclick="checkForm()" id="submitButton" type="submit" value="提交问卷">
+        </div>
+    </div>
+</body>
+</html>
