@@ -7,5 +7,5 @@
     -  例如HTML5文件夹下test_2下的电子时钟1下的index.html，那么预览路径就是:
         - https://lqxzd.github.io/Repository/HTML5/test_2/电子时钟1/index.html
    
-3. 有兴趣的可以加我微信一起聊技术呀，微信号：hly6096
+3. 有兴趣的可以加我微信一起聊技术呀，微信号：hly6096，要记得备注是Github哦
 
